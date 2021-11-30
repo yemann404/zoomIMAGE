@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(49, 47, 47);
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(153, 144, 144);
+    text-align: center;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+
+figure{
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.image #zoom{
+    margin-top: 20px;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image #zoom img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.image #zoom:hover img {
+    transform: scale(1.5);
+}
